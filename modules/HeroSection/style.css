@@ -1,0 +1,83 @@
+.hero-section {
+  @apply rounded-[50px] h-[671px] mt-9  overflow-hidden z-10;
+  background: linear-gradient(283.4deg, #ffe7cb 1.36%, #fff9f2 98.8%);
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  @apply flex justify-between items-center gap-[70px];
+}
+
+.round {
+  @apply absolute top-[20px] -left-[200px] size-[633px] -z-10 rounded-full rotate-[-180deg];
+  background: linear-gradient(
+    221.87deg,
+    rgba(255, 231, 203, 0.1) 4.21%,
+    #ffe7cb 85.88%
+  );
+}
+
+.hero-left {
+  @apply flex-1 pr-2 max-w-[501px] w-full;
+}
+
+.subtitle {
+  @apply text-sm text-[#111928] mb-4 bg-[#ffffffb2] px-4 py-1 rounded-full inline-block;
+}
+
+.title {
+  font-size: 74px;
+  color: #111928;
+  line-height: 85px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-family: "Sora", sans-serif;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.book-button {
+  @apply bg-[#cd0001] text-white p-5 rounded-md font-semibold cursor-pointer transition duration-300;
+}
+
+.book-button:hover {
+  @apply bg-[#ff0000];
+}
+
+.hero-right {
+  @apply z-10 flex flex-col items-start gap-4 flex-1;
+}
+
+.service-card {
+  @apply flex items-center justify-between gap-4 rounded-[20px] w-[290px] p-4;
+  background: var(--color-white-70, #ffffffb2);
+  backdrop-filter: blur(17px);
+}
+
+.service-card .icon {
+  @apply size-[86px];
+}
+
+.service-card .content {
+  flex: 1;
+}
+
+.service-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.service-card .link {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.hero-image {
+  @apply absolute right-0 top-0 z-0;
+}
