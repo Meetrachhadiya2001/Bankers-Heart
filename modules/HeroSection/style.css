@@ -1,11 +1,10 @@
 .hero-section {
   @apply rounded-[50px] h-[671px] mt-16 overflow-hidden z-10;
   background: linear-gradient(283.4deg, #ffe7cb 1.36%, #fff9f2 98.8%);
-  padding: 4rem 2rem;
 }
 
 .hero-content {
-  @apply flex justify-between items-center gap-[70px];
+  @apply flex justify-between items-center gap-[100px];
 }
 
 .round {
@@ -19,6 +18,7 @@
 
 .hero-left {
   @apply flex-1 pr-2 max-w-[501px] w-full;
+  padding: 4rem 2rem;
 }
 
 .subtitle {
@@ -46,9 +46,19 @@
 }
 
 .service-card {
-  @apply flex items-center justify-between gap-4 rounded-[20px] w-[290px] p-4;
-  background: var(--color-white-70, #ffffffb2);
+  @apply flex items-center justify-between gap-4 rounded-[20px] w-[290px] p-4 transition-all duration-300;
+  background: #ffffffb2;
   backdrop-filter: blur(17px);
+}
+
+.service-card:hover {
+  @apply flex items-center justify-between gap-4 rounded-[20px] w-[290px] p-4;
+  background: #ffffff18;
+  backdrop-filter: blur(20px);
+}
+
+.service-card:hover .content .link {
+  @apply text-[#cd0001];
 }
 
 .service-card .icon {
@@ -57,6 +67,10 @@
 
 .service-card .content {
   flex: 1;
+}
+
+.content h3 {
+  @apply text-lg font-bold leading-[25px];
 }
 
 .service-card h3 {
@@ -73,4 +87,16 @@
 
 .hero-image {
   @apply absolute right-0 top-0 z-0;
+}
+
+.swiper-pagination {
+  @apply bottom-6 !important;
+}
+
+.swiper-pagination-bullet {
+  @apply w-3 h-3 bg-gray-300 opacity-70 transition-all duration-300 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply w-8 bg-[#cd0001] opacity-100 rounded-full !important;
 }
