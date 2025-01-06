@@ -1,5 +1,5 @@
 .hero-section {
-  @apply rounded-[50px] h-[671px] mt-9  overflow-hidden z-10;
+  @apply rounded-[50px] h-[671px] mt-16 overflow-hidden z-10;
   background: linear-gradient(283.4deg, #ffe7cb 1.36%, #fff9f2 98.8%);
   padding: 4rem 2rem;
 }
@@ -26,18 +26,11 @@
 }
 
 .title {
-  font-size: 74px;
-  color: #111928;
-  line-height: 85px;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-  font-family: "Sora", sans-serif;
+  @apply text-[74px] font-bold leading-[85px] pb-[22px];
 }
 
 .description {
-  color: #666;
-  margin-bottom: 2rem;
-  line-height: 1.6;
+  @apply text-[#666] mb-4;
 }
 
 .book-button {
