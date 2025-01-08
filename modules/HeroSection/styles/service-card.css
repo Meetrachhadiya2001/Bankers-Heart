@@ -1,0 +1,36 @@
+/* Service Card Styles */
+.service-card {
+  @apply flex items-center justify-between gap-4 rounded-[20px] w-[290px] p-4 transition-all duration-300;
+  background: #ffffffb2;
+  backdrop-filter: blur(17px);
+}
+
+.service-card:hover {
+  @apply flex items-center justify-between gap-4 rounded-[20px] w-[290px] p-4;
+  background: #ffffff18;
+  backdrop-filter: blur(20px);
+}
+
+.service-card:hover .content .link {
+  @apply text-[#cd0001];
+}
+
+.service-card .icon {
+  @apply size-[86px];
+}
+
+.service-card .content {
+  flex: 1;
+}
+
+.service-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.service-card .link {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
+}

@@ -1,55 +1,15 @@
+/* Import component styles */
+@import "./styles/hero-sections.css";
+@import "./styles/service-card.css";
+@import "./styles/swiper.css";
+
+/* Layout */
 .hero-wrapper {
   @apply w-full overflow-hidden px-4;
 }
 
-.hero-section1 {
-  @apply rounded-[50px] h-[671px] mt-16 overflow-hidden z-10;
-  background: linear-gradient(283.4deg, #ffe7cb 1.36%, #fff9f2 98.8%);
-  width: calc(100% - 60px);
-  margin: 16px auto;
-}
-
-.hero-section2 {
-  @apply rounded-[50px] h-[671px] mt-16 overflow-hidden z-10;
-  background: linear-gradient(283.4deg, #ffcee6 1.36%, #fff0f6 98.8%);
-  width: calc(100% - 60px);
-  margin: 16px auto;
-}
-
-.hero-section3 {
-  @apply rounded-[50px] h-[671px] mt-16 overflow-hidden z-10;
-  background: linear-gradient(283.4deg, #cce6ff 1.36%, #f0f6ff 98.8%);
-  width: calc(100% - 60px);
-  margin: 16px auto;
-}
-
 .hero-content {
   @apply flex justify-between items-center gap-[100px];
-}
-
-.round1 {
-  @apply absolute top-[20px] -left-[200px] size-[633px] -z-10 rounded-full rotate-[-180deg];
-  background: linear-gradient(
-    221.87deg,
-    rgba(255, 231, 203, 0.1) 4.21%,
-    #ffe7cb 85.88%
-  );
-}
-.round2 {
-  @apply absolute top-[20px] -left-[200px] size-[633px] -z-10 rounded-full rotate-[-180deg];
-  background: linear-gradient(
-    221.87deg,
-    rgba(255, 206, 230, 0.1) 4.21%,
-    #ffcee6 85.88%
-  );
-}
-.round3 {
-  @apply absolute top-[20px] -left-[200px] size-[633px] -z-10 rounded-full rotate-[-180deg];
-  background: linear-gradient(
-    221.87deg,
-    rgba(204, 230, 255, 0.1) 4.21%,
-    #cce6ff 85.88%
-  );
 }
 
 .hero-left {
@@ -57,6 +17,15 @@
   padding: 4rem 2rem;
 }
 
+.hero-right {
+  @apply z-10 flex flex-col items-start gap-4 flex-1;
+}
+
+.hero-image {
+  @apply absolute right-0 top-0 z-0;
+}
+
+/* Typography */
 .subtitle {
   @apply text-sm text-[#111928] mb-4 bg-[#ffffffb2] px-4 py-1 rounded-full inline-block;
 }
@@ -69,84 +38,11 @@
   @apply text-[#666] mb-4;
 }
 
+/* Button */
 .book-button {
   @apply bg-[#cd0001] text-white p-5 rounded-md font-semibold cursor-pointer transition duration-300;
 }
 
 .book-button:hover {
   @apply bg-[#ff0000];
-}
-
-.hero-right {
-  @apply z-10 flex flex-col items-start gap-4 flex-1;
-}
-
-.service-card {
-  @apply flex items-center justify-between gap-4 rounded-[20px] w-[290px] p-4 transition-all duration-300;
-  background: #ffffffb2;
-  backdrop-filter: blur(17px);
-}
-
-.service-card:hover {
-  @apply flex items-center justify-between gap-4 rounded-[20px] w-[290px] p-4;
-  background: #ffffff18;
-  backdrop-filter: blur(20px);
-}
-
-.service-card:hover .content .link {
-  @apply text-[#cd0001];
-}
-
-.service-card .icon {
-  @apply size-[86px];
-}
-
-.service-card .content {
-  flex: 1;
-}
-
-.content h3 {
-  @apply text-lg font-bold leading-[25px];
-}
-
-.service-card h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-  color: #1a1a1a;
-}
-
-.service-card .link {
-  color: #666;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.hero-image {
-  @apply absolute right-0 top-0 z-0;
-}
-
-.hero-swiper {
-  @apply w-[75%] mx-auto overflow-visible;
-  padding: 20px 0;
-}
-
-.swiper-slide {
-  @apply flex justify-center items-center transition-all duration-300;
-  /* opacity: 0.4; */
-}
-
-/* .swiper-slide-active {
-  opacity: 1;
-} */
-
-.swiper-pagination {
-  @apply -bottom-1 !important;
-}
-
-.swiper-pagination-bullet {
-  @apply w-3 h-3 bg-gray-300 opacity-70 transition-all duration-300 !important;
-}
-
-.swiper-pagination-bullet-active {
-  @apply w-8 bg-[#cd0001] opacity-100 rounded-full !important;
 }
