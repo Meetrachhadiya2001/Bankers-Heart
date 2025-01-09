@@ -1,0 +1,22 @@
+.gradient-bg {
+  background: linear-gradient(90.06deg, #ffffff 2.36%, #fff4e8 99.2%);
+}
+
+.desc-card {
+  @apply absolute bottom-[-100px] left-1/2 -translate-x-1/2 border-[1px] border-[#9CA3AF] rounded-[24px] p-[10px] flex flex-col items-center text-center transition-all duration-1000;
+  width: 230px;
+  background: var(--color-white-70, #ffffffb2);
+  backdrop-filter: blur(3px);
+}
+
+.doctor-card:hover .desc-card {
+  @apply absolute bottom-[20px] left-1/2 -translate-x-1/2;
+}
+
+.doctor-card {
+  @apply relative border-[#9CA3AF] border-[1px] rounded-[24px] bg-transparent transition-all duration-1000;
+}
+
+.doctor-card:hover {
+  @apply border-[#530c0c] bg-[#530c0c];
+}

@@ -1,0 +1,29 @@
+/* Swiper Styles */
+.hero-swiper {
+  @apply w-[75%] mx-auto overflow-visible;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  @apply flex justify-center items-center transition-all duration-300 opacity-40;
+  transition-timing-function: ease-in-out;
+  will-change: transform, opacity;
+}
+
+.swiper-slide-active {
+  @apply flex justify-center items-center transition-all duration-300 opacity-100;
+  transition-timing-function: ease-in-out;
+  will-change: transform, opacity;
+}
+
+.swiper-pagination {
+  @apply -bottom-1 !important;
+}
+
+.swiper-pagination-bullet {
+  @apply w-3 h-3 bg-gray-300 opacity-70 transition-all duration-300 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply w-8 bg-[#cd0001] opacity-100 rounded-full !important;
+}

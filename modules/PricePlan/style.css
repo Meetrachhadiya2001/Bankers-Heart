@@ -1,0 +1,14 @@
+.card {
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}

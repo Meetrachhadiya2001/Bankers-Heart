@@ -1,0 +1,48 @@
+/* Import component styles */
+@import "./styles/hero-sections.css";
+@import "./styles/service-card.css";
+@import "./styles/swiper.css";
+
+/* Layout */
+.hero-wrapper {
+  @apply w-full overflow-hidden px-4;
+}
+
+.hero-content {
+  @apply flex justify-between items-center gap-[100px];
+}
+
+.hero-left {
+  @apply flex-1 pr-2 max-w-[501px] w-full;
+  padding: 4rem 2rem;
+}
+
+.hero-right {
+  @apply z-10 flex flex-col items-start gap-4 flex-1;
+}
+
+.hero-image {
+  @apply absolute right-0 top-0 z-0;
+}
+
+/* Typography */
+.subtitle {
+  @apply text-sm text-[#111928] mb-4 bg-[#ffffffb2] px-4 py-1 rounded-full inline-block;
+}
+
+.title {
+  @apply text-[74px] font-bold leading-[85px] pb-[22px];
+}
+
+.description {
+  @apply text-[#666] mb-4;
+}
+
+/* Button */
+.book-button {
+  @apply bg-[#cd0001] text-white p-5 rounded-md font-semibold cursor-pointer transition duration-300;
+}
+
+.book-button:hover {
+  @apply bg-[#ff0000];
+}
