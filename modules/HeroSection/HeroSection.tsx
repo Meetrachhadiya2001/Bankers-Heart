@@ -32,18 +32,6 @@ export const HeroSection = () => {
   return (
     <div className="hero-wrapper mt-16 flex items-center justify-center">
       <Swiper
-        // modules={[Pagination, Autoplay]}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // loop={true}
-        // speed={800}
-        // allowTouchMove={true}
-        // slidesPerView={1}
-        // centeredSlides={true}
-        // watchSlidesProgress={true}
-        // preventInteractionOnTransition={true}
-        // className="hero-swiper"
         loop={true}
         centeredSlides={true}
         pagination={{

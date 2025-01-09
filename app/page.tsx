@@ -8,7 +8,7 @@ import { Testimonails } from "@/modules/Testimonails/Testimonails";
 
 const page = () => {
   return (
-    <section>
+    <main>
       <HeroSection />
       <Testimonails />
       <Expert />
@@ -16,7 +16,7 @@ const page = () => {
       <ExpertDoctors />
       <PricePlan />
       <Blogs />
-    </section>
+    </main>
   );
 };
 
